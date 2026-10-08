@@ -1,20 +1,26 @@
-# Curated Asthma Gene Sets
+# Curated Asthma Pathway Gene Sets
 
-This directory is the single source of truth for all curated pathway definitions.
+This directory contains the curated pathway definitions used by the publication workflow for pathway-level analysis and pathway annotation.
 
-Expected files:
+## Files
 
-- `asthma_curated_pathways.tsv`
-- `asthma_curated_pathways.gmt`
-- `pathway_provenance.tsv`
+### `asthma_curated_pathways.tsv`
+Tabular representation of the curated asthma pathway panel and its member genes.
 
-Do not redefine pathways inside notebooks. Load them from these files.
+### `asthma_curated_pathways.gmt`
+GMT-format representation of the same pathway definitions for enrichment workflows.
 
-Each pathway must have:
+### `pathway_provenance.tsv`
+Source/provenance record for the curated pathway definitions.
 
-- a stable pathway name;
-- a defined gene-symbol namespace;
-- a complete gene list;
-- literature or database provenance;
-- curator and verification date;
-- notes on inclusion and exclusion decisions.
+## Analytical use
+
+The curated pathway panel is used for:
+- pre-ranked GSEA,
+- ssGSEA pathway scoring,
+- pathway-level interpretation,
+- pathway annotation of curated-gene network outputs.
+
+The final systems-level analysis evaluates 10 curated asthma-relevant pathways.
+
+These files are the repository source of truth for the curated pathway definitions used by the authoritative executed notebook. Pathway membership should not be redefined ad hoc inside downstream plotting or reporting code.
