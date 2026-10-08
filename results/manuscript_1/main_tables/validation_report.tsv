@@ -1,0 +1,12 @@
+Check	Passed	Detail
+Sample count matches design	True	24
+Expression columns aligned to metadata	True	exact order and membership
+No missing expression values	True	0
+Ancestry composition matches design	True	{'African': 12, 'European': 12}
+Sex composition matches design	True	{'Female': 16, 'Male': 8}
+Probe count matches platform	True	54715
+Ten curated pathways loaded	True	10
+Ancestry and sex are not collinear	True	adjusted models identifiable
+Directional counts reconcile	True	612 + 408 = 1020
+Sex contrast positive control	True	known sex-linked genes recovered
+Co-expression threshold fixed	True	0.6

@@ -1,0 +1,13 @@
+Path	Status	Purpose
+results/manuscript_1/MANIFEST.tsv	required	72-file manifest from executed run
+results/MS1_supplementary_2026-07-30.zip	required	23.23 MB supplementary archive
+data/manifests/sample_manifest.tsv	required	24-sample cohort list
+data/manifests/MS1_ancestry_label_provenance.tsv	required	GEO label audit
+data/manifests/MS1_cohort_selection_audit.tsv	required	selection fractions
+data/processed/GSE69683_24sample_probe_expression.csv.gz	required	54,715 x 24 matrix
+data/processed/GSE69683_24sample_gene_expression.csv.gz	required	21,653 x 24 matrix
+data/processed/GSE69683_24sample_metadata.tsv	required	validated metadata
+data/annotation/GPL570_annotation_subset.tsv.gz	required	cross-platform annotation mapping
+results/manuscript_1/main_tables/MS1_Table_3_curated_genes_revised.tsv	required	row-level curated statistics
+results/manuscript_1/supplementary/S4_coexpression_networks/MS1_S4_all_samples_nodes.tsv	required	hub verification
+results/manuscript_1/supplementary/S4_coexpression_networks/MS1_S4_all_samples_edges.tsv	required	network edge verification

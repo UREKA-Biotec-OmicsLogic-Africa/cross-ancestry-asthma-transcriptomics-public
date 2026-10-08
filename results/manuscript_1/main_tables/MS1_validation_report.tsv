@@ -1,0 +1,15 @@
+check	passed	detail
+Sample count matches design	True	24
+Expression columns aligned to metadata	True	exact order and membership
+No missing expression values	True	0
+Ancestry composition matches design	True	{'African': 12, 'European': 12}
+Sex composition matches design	True	{'Female': 16, 'Male': 8}
+Probe count matches the expected platform	True	54715
+Ten curated pathways loaded	True	10
+Ancestry and sex are not collinear	True	the adjusted models are identifiable
+Each ancestry group maps to one GEO race value	True	no categories pooled
+Log2FC is a difference of means, not a ratio of logs	True	verified elementwise
+Directional counts sum to the dual-threshold total	True	ancestry contrast
+FDR-only count is at least the dual-threshold count	True	2,134 >= 1,020
+Sex contrast recovers known sex-linked genes	True	positive control for the pipeline
+Co-expression threshold fixed at the pre-specified value	True	0.6

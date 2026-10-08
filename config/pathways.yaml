@@ -1,0 +1,53 @@
+# Populate and verify the genes for every pathway before analysis.
+# Keep this file synchronized with the TSV and GMT files in data/gene_sets/.
+
+pathways:
+  Immune_Response:
+    expected_gene_count: 21
+    genes: []
+    status: TO_BE_POPULATED_AND_VERIFIED
+
+  Airway_Remodeling:
+    expected_gene_count: 20
+    genes: []
+    status: TO_BE_POPULATED_AND_VERIFIED
+
+  Oxidative_Stress:
+    expected_gene_count: 17
+    genes: []
+    status: TO_BE_POPULATED_AND_VERIFIED
+
+  Bronchial_Hyperresponsiveness:
+    expected_gene_count: 16
+    genes: []
+    status: TO_BE_POPULATED_AND_VERIFIED
+
+  Epithelial_Barrier_Function:
+    expected_gene_count: 9
+    genes: []
+    status: TO_BE_POPULATED_AND_VERIFIED
+
+  Innate_Immunity_TLR_Signaling:
+    expected_gene_count: 9
+    genes: []
+    status: TO_BE_POPULATED_AND_VERIFIED
+
+  Type_17_Neutrophilic_Inflammation:
+    expected_gene_count: 8
+    genes: []
+    status: TO_BE_POPULATED_AND_VERIFIED
+
+  Hypoxia_Metabolic_Response:
+    expected_gene_count: 5
+    genes: []
+    status: TO_BE_POPULATED_AND_VERIFIED
+
+  Steroid_Response:
+    expected_gene_count: 5
+    genes: []
+    status: TO_BE_POPULATED_AND_VERIFIED
+
+  Drug_Metabolism:
+    expected_gene_count: 30
+    genes: []
+    status: TO_BE_POPULATED_AND_VERIFIED

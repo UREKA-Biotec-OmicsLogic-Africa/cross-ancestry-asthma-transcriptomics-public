@@ -1,0 +1,4 @@
+Contrast and model	Features tested	FDR < 0.05	FDR < 0.05 and |adjusted log2FC| > 0.5	Higher in first group	Higher in second group
+Ancestry OLS adjusted for sex	54715	2134	1020	612	408
+Ancestry unadjusted Welch sensitivity	54715	1445	751	407	344
+Sex OLS adjusted for ancestry	54715	97	73	33	40

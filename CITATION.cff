@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite this software repository and the associated manuscript."
+title: "Cross-Ancestry Asthma Transcriptomics: Reproducible Analysis Repository"
+type: software
+version: "1.0.0"
+authors:
+  - family-names: "Adeluwoye"
+    given-names: "Adekunle O."
+  - family-names: "Watafua"
+    given-names: "Miriam"
+  - family-names: "David"
+    given-names: "Katherine"
+  - family-names: "Jamiu"
+    given-names: "Lawal"
+  - family-names: "Alabetutu"
+    given-names: "Ayanfeoluwa"
+repository-code: "https://github.com/UREKA-Biotec-OmicsLogic-Africa/cross-ancestry-asthma-transcriptomics-public" 
+contact: "adekunle.a@urekabiotec.org"
+abstract: >
+  Reproducible code, configuration, processed analysis inputs, figures,
+  tables, and supplementary outputs for a cross-ancestry whole-blood
+  transcriptomic analysis of asthma using GEO dataset GSE69683.
+keywords:
+  - asthma
+  - transcriptomics
+  - ancestry
+  - microarray
+  - whole blood
+  - differential expression
+  - pathway analysis
+license: MIT
