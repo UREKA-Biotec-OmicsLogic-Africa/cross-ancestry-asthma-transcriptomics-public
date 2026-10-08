@@ -1,0 +1,120 @@
+project:
+  name: cross-ancestry-asthma-transcriptomics
+  version: 0.1.0-template
+  random_seed: 42
+
+dataset:
+  accession: GSE69683
+  platform: GPL570
+  assay: whole_blood_microarray
+  expected_probe_count: 54715
+  expected_sample_count: 24
+
+groups:
+  ancestry:
+    reference: African
+    comparison: European
+    expected_counts:
+      African: 12
+      European: 12
+  sex_or_gender:
+    field_name: gender
+    reference: female
+    comparison: male
+    expected_counts:
+      female: 16
+      male: 8
+
+paths:
+  sample_manifest: data/manifests/sample_manifest.tsv
+  probe_expression: data/processed/GSE69683_24sample_probe_expression.csv.gz
+  gene_expression: data/processed/GSE69683_24sample_gene_expression.csv.gz
+  metadata: data/processed/GSE69683_24sample_metadata.tsv
+  platform_annotation: data/annotation/GPL570_annotation_subset.tsv.gz
+  pathway_tsv: data/gene_sets/asthma_curated_pathways.tsv
+  pathway_gmt: data/gene_sets/asthma_curated_pathways.gmt
+  output_root: results
+  figure_dir: results/main_figures
+  table_dir: results/main_tables
+  supplement_dir: results/supplementary
+
+quality_control:
+  require_no_missing_expression_values: true
+  correlation_method: pearson
+  flag_outliers: true
+  batch_assessment:
+    enabled: false
+    reason: "Enable only when valid batch metadata are available."
+
+dimensionality_reduction:
+  pca:
+    enabled: true
+    n_components: 10
+    scale_features: false
+  tsne:
+    enabled: false
+    perplexity: 5
+    learning_rate: auto
+    initialization: pca
+    n_iter: 1000
+    random_state: 42
+    note: "Enable only after parameters are finalized and documented."
+
+differential_expression:
+  genome_wide_ancestry:
+    method: welch_t_test
+    equal_var: false
+    multiple_testing: benjamini_hochberg
+    fdr_threshold: 0.05
+    absolute_log2fc_threshold: 0.5
+    log2fc_definition: mean_log2_expression_group1_minus_group2
+  genome_wide_gender:
+    method: welch_t_test
+    equal_var: false
+    multiple_testing: benjamini_hochberg
+    fdr_threshold: 0.05
+    absolute_log2fc_threshold: 0.5
+  curated_gene_adjusted_model:
+    formula: "expression ~ C(ancestry) + C(gender)"
+    multiple_testing: benjamini_hochberg
+    correction_scope: all_curated_genes
+    fdr_threshold: 0.05
+
+probe_to_gene:
+  primary_level: probe
+  representative_probe_rule: minimum_fdr_within_gene
+  gene_expression_collapse_rule: mean_across_unambiguous_probes
+  retain_ambiguous_probes_separately: true
+  retain_unmapped_probes_separately: true
+
+pathway_analysis:
+  gsea:
+    enabled: true
+    ranking_statistic: signed_negative_log10_p
+    permutation_type: gene_set
+    permutations: 1000
+    min_size: 3
+    max_size: 500
+    random_seed: 42
+  ssgsea:
+    enabled: true
+    normalization: rank
+    group_test: welch_t_test
+    multiple_testing: benjamini_hochberg
+
+coexpression:
+  enabled: true
+  status: exploratory
+  correlation_method: pearson
+  absolute_r_threshold: 0.6
+  adaptive_thresholding: false
+  note: "Do not change thresholds after inspecting results."
+
+exports:
+  figure_formats:
+    - png
+    - pdf
+  table_formats:
+    - tsv
+  dpi: 300
+  write_checksums: true

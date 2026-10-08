@@ -1,0 +1,6 @@
+group	samples	genes	tested_pairs	retained_edges	connected_nodes	abs_r_threshold	fdr_threshold
+All samples	24	128	8128	173	81	0.6	0.05
+African ancestry	12	128	8128	2	4	0.6	0.05
+European ancestry	12	128	8128	0	0	0.6	0.05
+Female	16	128	8128	1	2	0.6	0.05
+Male	8	128	8128	8	16	0.6	0.05

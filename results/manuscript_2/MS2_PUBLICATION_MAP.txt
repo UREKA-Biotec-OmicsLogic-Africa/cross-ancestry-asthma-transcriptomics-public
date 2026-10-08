@@ -1,0 +1,21 @@
+MS2 PUBLICATION-FACING OUTPUT MAP
+
+Main Tables
+Table 1 - Pre-ranked GSEA
+Table 2 - Sex-adjusted ssGSEA pathway-score differences
+Table 3 - Co-expression network summary
+
+Main Figures
+Figure 1 - GSEA
+Figure 2 - ssGSEA
+Figure 3 - Full-cohort curated-gene co-expression network
+
+Supplementary Materials
+Supplementary Table S1 - Complete GSEA outputs
+Supplementary Table S2 - ssGSEA scores and statistics
+Supplementary Table S3 - Network pairs, edges, nodes, ranked centrality and summary
+Supplementary Figure S1 - African-ancestry, European-ancestry,
+female and male subgroup networks
+
+The reciprocal sex differential-expression analysis is not a manuscript-facing
+MS2 result after de-overlap.

@@ -1,0 +1,39 @@
+sample_selection:
+  accession: GSE69683
+  expected_total: 24
+  inclusion:
+    disease_status: asthma
+    tissue: whole blood
+    ancestry_groups:
+      - African
+      - European
+  exclusions:
+    - "Document any excluded GEO sample accession and reason here."
+
+required_manifest_fields:
+  - sample_id
+  - geo_accession
+  - included
+  - disease_status
+  - tissue
+  - ancestry_label
+  - ancestry_source_field
+  - ancestry_source_value
+  - gender
+  - gender_source_field
+  - dataset
+  - platform
+  - inclusion_reason
+  - exclusion_reason
+
+validation_rules:
+  unique_sample_ids: true
+  expression_metadata_alignment_required: true
+  missing_ancestry_allowed: false
+  missing_gender_allowed: false
+  expected_ancestry_counts:
+    African: 12
+    European: 12
+  expected_gender_counts:
+    female: 16
+    male: 8

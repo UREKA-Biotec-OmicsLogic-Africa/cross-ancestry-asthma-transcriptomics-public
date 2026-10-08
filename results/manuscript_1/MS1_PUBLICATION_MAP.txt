@@ -1,0 +1,22 @@
+MS1 PUBLICATION-FACING OUTPUT MAP
+
+Main Tables
+Table 1 - Cohort characteristics
+Table 2 - Genome-wide ancestry differential-expression and sensitivity/sex summary
+Table 3 - Thirteen curated significant asthma genes
+
+Main Figures
+Figure 1 - QC, expression distributions and clustering
+Figure 2 - PCA, scree plot and t-SNE
+Figure 3 - Ancestry differential-expression volcano and heatmap
+Figure 4 - Curated-gene analysis
+Figure 5 - Reciprocal sex contrast as internal validation
+
+Supplementary Materials
+Supplementary Table S1 - Complete differential-expression and audit products
+Supplementary Table S2 - Curated-gene statistics
+Supplementary Figure S1 - Ten descriptive pathway-gene violin plots
+
+GSEA, ssGSEA and co-expression network outputs remain preserved in the
+repository as authoritative executed-analysis outputs but are not MS1
+manuscript-facing supplementary materials after de-overlap.

@@ -1,0 +1,13 @@
+{
+  "authoritative_executed_notebook": "Cross_Ancestry_Asthma_Transcriptomics_PUBLICATION_MASTER_EXECUTED_v1.ipynb",
+  "sha256": "568aed3e22b7baafcc1bd42f23157c145ac1f41ffb30402f52d182280896795f",
+  "execution_started_utc": "2026-07-30T14:27:12+00:00",
+  "dataset": "GSE69683",
+  "platform": "GPL13158",
+  "series_matrix_sha256": "417dc3e348588a49b1b2234d22c3928080a0330c49bd5ff817e3fe31bededb26",
+  "drive_repository_root_from_execution": "/content/drive/MyDrive/cross-ancestry-asthma-transcriptomics",
+  "drive_shared_folder_supplied_by_user": "https://drive.google.com/drive/folders/147avLw4c2mfM8gO1rdQDBmp9aoTqle-O?usp=drive_link",
+  "generated_files_indexed": 72,
+  "supplementary_archive": "MS1_supplementary_2026-07-30.zip",
+  "supplementary_archive_size_mb": 23.23
+}

@@ -1,0 +1,57 @@
+CROSS-ANCESTRY ASTHMA TRANSCRIPTOMICS: SUMMARY OF FINDINGS
+==========================================================================
+Generated 2026-07-30T14:27:12+00:00
+Dataset GSE69683, platform GPL13158, 54,715 probes, 24 samples
+
+COHORT
+--------------------------------------------------------------------------
+  12 African ancestry, 12 European ancestry
+  16 female, 8 male; 8 female and 4 male per ancestry group
+  Ancestry is self-reported race or ethnicity as recorded by U-BIOPRED.
+  No genotype data are available, so this is not genetically inferred ancestry.
+
+PRIMARY ANCESTRY ANALYSIS (OLS adjusted for gender)
+--------------------------------------------------------------------------
+  Probes tested                 : 54,715
+  FDR < 0.05                    : 2,134
+  FDR < 0.05 and |log2FC| > 0.5 : 1,020
+    higher in African           : 612
+    higher in European          : 408
+  Report the two counts as separate quantities. The directional counts belong
+  to the dual-threshold subset, not to the FDR-only count.
+
+CURATED ASTHMA GENES (128 of 129 present)
+--------------------------------------------------------------------------
+  Significant, single correction family: 13
+    ALOX5, ARRB2, CD28, CLDN18, CXCL1, CXCL8, GATA3, LDHA, LTC4S, MMP9, PRDX1, TGFB1, TIMP2
+  A per-pathway correction would give 18; the single
+  family across all curated genes is reported.
+
+PATHWAY-LEVEL DIFFERENCES (ssGSEA, gender-adjusted)
+--------------------------------------------------------------------------
+  Airway_Remodeling                score difference -0.0253 (higher in European), FDR 0.0001
+  Bronchial_Hyperresponsiveness    score difference -0.0145 (higher in European), FDR 0.0348
+  Innate_Immunity_TLR              score difference -0.0250 (higher in European), FDR 0.0348
+  Steroid_Response                 score difference -0.0450 (higher in European), FDR 0.0348
+
+PRE-RANKED GSEA
+--------------------------------------------------------------------------
+  Epithelial_Barrier_Function      NES -1.871 (towards European), FDR 0.0152
+  Airway_Remodeling                NES -1.766 (towards European), FDR 0.0193
+
+INTERPRETATION AND LIMITS
+--------------------------------------------------------------------------
+  Whole blood is a cell mixture. Ancestry-associated differences in leucocyte
+  composition, particularly the Duffy-null neutrophil phenotype, are a plausible
+  driver of part of this signal. Deconvolution is not performed here, so
+  cell-composition and cell-intrinsic effects cannot be separated.
+
+  With 12 samples per ancestry group the study is underpowered for small effects.
+  Subgroup co-expression networks use 8 to 12 samples and are exploratory only.
+
+  Quality control identified no outlier samples. It does not establish the absence
+  of batch effects; no batch covariate is available in the GEO metadata.
+
+  Findings are associations within a single severe-asthma cohort and require
+  replication in an independent, ancestry-diverse dataset before any clinical
+  or mechanistic claim is made.
